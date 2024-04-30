@@ -4,6 +4,9 @@
     @drop="onDrop($event, options.id)"
     @dragover.prevent
     @dragenter.prevent>
+
+    <CardSort :options/>
+
     <div class="title">
       <h2>
         {{ options.title }}
@@ -41,6 +44,7 @@
   import { ref, inject } from 'vue';
   import CardItem from './CardItem.vue';
   import CardForm from './CardForm.vue';
+  import CardSort from "./CardSort.vue";
 
   const firstList = inject('firstList');
   const secondList = inject('secondList');

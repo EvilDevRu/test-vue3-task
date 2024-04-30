@@ -6,4 +6,7 @@ export default defineConfig({
   base: '/canban',
   publicPath: '/',
   plugins: [vue()],
+  build: {
+    assetsDir: '/',
+  },
 });
